@@ -11,7 +11,7 @@ readme = "README.md"
 repository = "https://github.com/emilk/egui/tree/main/crates/egui-winit"
 categories = ["gui", "game-development"]
 keywords = ["winit", "egui", "gui", "gamedev"]
-include = ["../../LICENSE-APACHE", "../../LICENSE-MIT", "**/*.rs", "Cargo.toml"]
+include = ["LICENSE-APACHE", "LICENSE-MIT", "**/*.rs", "Cargo.toml"]
 
 [lints]
 workspace = true
@@ -58,7 +58,7 @@ wayland = ["winit/wayland", "bytemuck"]
 x11 = ["winit/x11", "bytemuck"]
 
 [dependencies]
-egui = { workspace = true, default-features = false }
+egui = { version = "=0.36.2", default-features = false }
 
 log.workspace = true
 profiling.workspace = true
